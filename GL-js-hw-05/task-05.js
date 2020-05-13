@@ -5,7 +5,7 @@ class Car {
     this.price = price; // - цена автомобиля
     this.maxSpeed = maxSpeed; // - максимальная скорость
     this.isOn = isOn; // - заведен ли автомобиль, значения true или false. Изначально false
-    this.distance = distance; // - общий киллометраж, изначально 0
+    this.distance = distance; // - общий киллометраж, изначально 0 0
   }
 
   static getSpecs(obj) {
