@@ -26,12 +26,13 @@ const ingredients = [
   'Приправы',
 ];
 const list = document.querySelector('#ingredients');
-const arr = [];
+// const arr = [];
 
 // eslint-disable-next-line no-unused-vars
 const pushItemToList = ingredients.forEach(el => {
   const item = document.createElement('li');
-  arr.push(item);
+  // arr.push(item);
+  list.append(item);
   item.textContent = el;
 });
-list.append(...arr);
+// list.append(...arr);

@@ -21,10 +21,10 @@ const images = [
   },
 ];
 
-const list = document.querySelector('#gallery');
+const list1 = document.getElementById('gallery');
 const patternStr = ({ url, alt }) => {
-  return `<li class="gallery-item"><img class="gallery-img" src=${url} alt=${alt}></li>`;
+  return `<li class="gallery-item"><img class="gallery-img" src=${url} alt=${alt} onload=resizeImg(this, 200, 100)></li> `;
 };
 const createGallery = images.reduce((acc, el) => (acc += patternStr(el)), '');
 
-list.insertAdjacentHTML('beforeend', createGallery);
+list1.insertAdjacentHTML('beforeend', createGallery);
